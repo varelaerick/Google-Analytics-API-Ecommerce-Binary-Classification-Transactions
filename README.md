@@ -7,8 +7,8 @@ Then, we will be able to visualize the best decision tree for each traffic sourc
 ## Overview
 
 * First, four functions were built to split the dfs in train and test. Raw split, without zeros (without bounce rate), without outliers,  without zeros and outliers.
- * Also was built three functions for the Resampling Strategies. Random Under Sample, Random Over Sample and Tomek Links. 
-* Then, the main function was built  that tested all these variations into three different classification algos: DecisionTreeClassifier, RandomForestClassifier, Extreme Gradient Boosting. The function will return a table with 42 variations and their respective Recall, Precision and F1-scores.  
+ * Also was built three functions for the **Resampling Strategies**. **Random Under Sample**, **Random Over Sample** and **Tomek Links**. 
+* Then, the main function was built  that tested all these variations into three different classification algos: **DecisionTreeClassifier**, **RandomForestClassifier**, E**xtreme Gradient Boosting**. The function will return a table with 42 variations and their respective **Recall**, **Precision** and **F1-scores**.  
 * Using hyperopt i will tune the best model found by the previous function of each traffic medium and plot the feature importance and the best decision tree.
 
 ## Resources Used
