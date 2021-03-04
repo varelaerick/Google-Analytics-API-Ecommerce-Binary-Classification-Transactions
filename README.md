@@ -74,15 +74,16 @@ and the decision tree and for each traffic medium.<br/>
 The project accomplished the main objective that was to find the best method to build models for each traffic medium of that ecommerce and present a decision tree for each of them.
  
 Since it was my first machine learning project, I'm proud to do such a confusing thing haha. However, now I can see a lot of things to improve, such as:
- 
-* Hierarchy organization and better explanation about sections.
-* Use Accuracy as one of the Evaluate Metrics 
-* Change Tomek link to NearMiss under sample.
+
+* Better organization and explanation about sections.
+* Transformation & Scaling the features
+* Use Accuracy as one of the Evaluate Metrics
+* Change the Tomek link to NearMiss under sample.
 * Build a pipeline for the tunning.
 * Plot the decision rules for better understanding of the tree.
 * Show the entropy for transaction and not transaction.
-* Present the profile of the customer per traffic medium.
- 
+* Present the best profile of the customer per traffic medium.
+
 It will be updated as soon as possible.
  
 Author: Erick C. Varela <br/>
