@@ -16,7 +16,7 @@ Then, we will be able to visualize the best decision tree for each traffic sourc
 **Packages**: pandas, numpy, seaborn, matplotlib, sklearn, imblearn, xgboost, hyperopt, joblib
  
 ## Data Cleaning 
-After import the data already cleaned and organised at [Exploratory Analysis](https://github.com/varelaerick/Google-Analyts-API-Ecommerce-Exploratory-Data-Analysis-Proj) I will drop split the df per medium and drop 'medium', 'ga:transactionRevenue' and 'ga:itemQuantity' to avoid data leakage. Then I converted the categorical variables into dummy/indicator variables.
+After importing the data already cleaned and organised at [Exploratory Analysis](https://github.com/varelaerick/Google-Analyts-API-Ecommerce-Exploratory-Data-Analysis-Proj) I will drop split the df per medium and drop 'medium', 'ga:transactionRevenue' and 'ga:itemQuantity' to avoid data leakage. Then I converted the categorical variables into dummy/indicator variables.
 
 ## Functions 
 In that section will define a few functions that will be called by the main function (Model Test). The functions are as follows.
