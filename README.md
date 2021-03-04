@@ -1,14 +1,14 @@
 # Google Analytics-API - Ecommerce - Binary Classification - Transactions - Project
 
 ## Motivation 
-We saw that each medium of traffic has particularities and that split the data based on the traffic sources can help us to get better analyses. For that reason I am going to do a few tests to find the best splitting, balancing and classification algho to find the best transaction predictor for each traffic medium. 
+We saw that each traffic medium has particularities and that split the data based on the traffic sources can help us to get better analyses. For that reason I am going to do a few tests to find the best splitting, balancing and classification algho to find the best transaction predictor for each traffic medium. 
 Then, we will be able to visualize the best decision tree for each traffic source, that can help any ecommerce to understand what is the usual behavior and profile of the customer more likely to buy. In that way, the project can help the marketing team define strategies to reach more customers with the best profile for each traffic medium.
 
 ## Overview
 
-* First, four functions were built to split the dfs in train and test. Raw split, without zeros (without bounce rate), without outliers,  without zeros and outliers.
+* Four functions were built to split the dfs in train and test. Raw split, without zeros (without bounce rate), without outliers, without zeros and outliers.
  * Also was built three functions for the **Resampling Strategies**. **Random Under Sample**, **Random Over Sample** and **Tomek Links**. 
-* Then, the main function was built  that tested all these variations into three different classification algos: **DecisionTreeClassifier**, **RandomForestClassifier**, E**xtreme Gradient Boosting**. The function will return a table with 42 variations and their respective **Recall**, **Precision** and **F1-scores**.  
+* Then, the main function was built  that tested all these variations into three different classification algos: **DecisionTreeClassifier**, **RandomForestClassifier**, E**xtreme Gradient Boosting**. The function will return a table with 42 variations and their respective **Recall**, **Precision** and **F1-scores**.
 * Using **Hyperopt** i will tune the best model found by the previous function of each traffic medium and plot the feature importance and the best decision tree.
 
 ## Resources Used
