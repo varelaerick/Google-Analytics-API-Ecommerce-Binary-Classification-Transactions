@@ -94,7 +94,7 @@ Date: 3/10/2020
 
 ## For the full dynamic visualizations:
 
-### [See The Kernel On Kaggle](https://www.kaggle.com/erickvarela/ga-api-classification-ecommerce-transactions/comments)
+### [See The Kernel On Kaggle](https://www.kaggle.com/erickvarela/ga-api-classification-ecommerce-transactions)
 
 
 ### [Or On Nbviewer](https://nbviewer.jupyter.org/github/varelaerick/Google-Analytics-API-Ecommerce-Binary-Classification-Transactions/blob/main/ga-api-classification-ecommerce-transactions.ipynb)
