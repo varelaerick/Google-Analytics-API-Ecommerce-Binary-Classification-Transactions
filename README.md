@@ -88,3 +88,13 @@ It will be updated as soon as possible.
  
 Author: Erick C. Varela <br/>
 Date: 3/10/2020
+<br/>
+<br/>
+<br/>
+
+## For the full dynamic visualizations:
+
+### [See The Kernel On Kaggle](https://www.kaggle.com/erickvarela/ga-api-classification-ecommerce-transactions/comments)
+
+
+### [Or On Nbviewer](https://nbviewer.jupyter.org/github/varelaerick/Google-Analytics-API-Ecommerce-Binary-Classification-Transactions/blob/main/ga-api-classification-ecommerce-transactions.ipynb)
