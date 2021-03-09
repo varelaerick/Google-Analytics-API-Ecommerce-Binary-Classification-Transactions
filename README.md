@@ -1,4 +1,4 @@
-# Google Analytics-API - Ecommerce - Binary Classification - Transactions 
+# Google Analytics-API - Ecommerce - Binary Classification - Transactions - Project Overview
 
 ## Motivation 
 We saw that each traffic medium has particularities and that split the data based on the traffic sources can help us to get better analyses. For that reason I am going to do a few tests to find the best splitting, balancing and classification algho to find the best transaction predictor for each traffic medium. 
