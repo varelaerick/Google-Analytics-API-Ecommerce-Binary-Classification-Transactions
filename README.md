@@ -1,14 +1,14 @@
 # Google Analytics-API - Ecommerce - Binary Classification - Transactions - Project Overview
 
 ## Motivation 
-We saw that each traffic medium has particularities and that split the data based on the traffic sources can help us to get better analyses. For that reason, I am going to do a few tests to find the best splitting, balancing, and classification algorithm to find the best transaction predictor for each traffic medium. 
-Then, we will be able to visualize the best decision tree for each traffic source, which can help any eCommerce to understand what is the usual behavior and profile of the customer more likely to buy. In that way, the project can help the marketing team define strategies to reach more customers with the best profile for each traffic medium.
+We saw that each traffic medium has particularities and that splitting the data based on the traffic sources can help us to get better analyses. For that reason, I will do a few tests to find the best splitting, balancing, and classification algorithm to find the best transaction predictor for each traffic medium. 
+Then, we will be able to visualize the best decision tree for each traffic source, which can help any eCommerce understand the usual behavior and profile of the customer more likely to buy. The project can help the marketing team define strategies to reach more customers with the best profile for each traffic medium.
 
 ## Overview
 * Tested 42 different methods to predicate the transaction, tune the best method and plot the decision tree
-* Four functions were built to split the dfs in train and test. Raw split, without zeros (without bounce rate), without outliers, without zeros and outliers.
+* Four functions were built to split the dfs in train and test—raw split, without zeros (without bounce rate), outliers, and zeros and outliers.
  * Also was built three functions for the **Resampling Strategies**. **Random Under Sample**, **Random Over Sample**, and **Tomek Links**. 
-* Then, the main function was built that tested all these variations into three different classification algorithms: **DecisionTreeClassifier**, **RandomForestClassifier**, **Extreme Gradient Boosting**. 
+* Then, the primary function was built that tested all these variations into three different classification algorithms: **DecisionTreeClassifier**, **RandomForestClassifier**, **Extreme Gradient Boosting**. 
 * Using **Hyperopt** I will tune the best model found by the previous function of each traffic medium and plot the feature importance and the best decision tree.
 
 ## Resources Used
@@ -16,14 +16,14 @@ Then, we will be able to visualize the best decision tree for each traffic sourc
 **Packages**: pandas, numpy, seaborn, matplotlib, sklearn, imblearn, xgboost, hyperopt, joblib
  
 ## Data Cleaning 
-After importing the data already cleaned and organized at [Exploratory Analysis](https://github.com/varelaerick/Google-Analyts-API-Ecommerce-Exploratory-Data-Analysis-Proj) I will drop split the df per medium and drop 'medium', 'ga:transactionRevenue' and 'ga:itemQuantity' to avoid data leakage. Then I converted the categorical variables into dummy/indicator variables.
+After importing the data cleaned and organized at [Exploratory Analysis](https://github.com/varelaerick/Google-Analyts-API-Ecommerce-Exploratory-Data-Analysis-Proj) I will drop split the df per medium and drop 'medium', 'ga:transactionRevenue' and 'ga:itemQuantity' to avoid data leakage. Then I converted the categorical variables into dummy/indicator variables.
 
 ## Functions 
-In that section will define a few functions that will be called by the main function (Model Test). The functions are as follows.
-* **The Data Split Formats** - Functions will return the train and test split of the raw split, without zeros (without bounce rate), without outliers,  without zeros, and outliers.
-* **Resampling Strategies Splitting** - Functions will return the train data set balanced with three different methods. Random Under Sampler, Random Over Sampler, and TokenLink Under Sampling.
-* **Evaluate Metrics**- Function to return three the Precision and Recall and F1-Score of the models.
-* **Model Test (Main Function)** - Will return a table with the recall precision and f1-score based on the test set Raw Data for the 48 different models. Return example:
+That section will define a few functions that will be called by the primary function (Model Test). The functions are as follows.
+* **The Data Split Formats** - Functions will return the train and test split of the raw split, without zeros (without bounce rate), outliers, zeros, and outliers.
+* **Resampling Strategies Splitting** - Functions will return the train data set balanced with three methods—Random Under Sampler, Random Over Sampler, and TokenLink Under Sampling.
+* **Evaluate Metrics**- Function to return three of the models' Precision and Recall and F1-Score.
+* **Model Test (Main Function)** - Will return a table with the recall precision and f1-score based on the Raw Data test for the 48 different models. Return example:
  
 ## Result of Methods Evaluation
 After running the function through all the dfs, in that section I create tables that show the top 5 methods per DF, and the best method per DF based on F1-Score. 
